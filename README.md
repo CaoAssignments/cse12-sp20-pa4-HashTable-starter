@@ -148,14 +148,15 @@ Each time you do a resize and rehash, write the result out to the text file (Spe
 
 
 
-**Note**: There are two constructors in the HashTable class in the starter code provided. One takes in the initial size (any value > 0), while the other constructor takes in the initial size and a filename as well. The boolean `printStats` is set to false by default, and is only changed to true in the constructor that takes in a filename. Each time you expand and rehash your table, you would need to check if this boolean is set to true. If yes, you would write the current statistics to the file before rehash.
+**Note**: There are two constructors in the HashTable class in the starter code provided. One takes in the initial size (any value >= 0), while the other constructor takes in the initial size and a filename as well. The boolean `printStats` is set to false by default, and is only changed to true in the constructor that takes in a filename. Each time you expand and rehash your table, you would need to check if this boolean is set to true. If yes, you would write the current statistics to the file before rehash.
 
-	For example, after 4 rehashes, the file will have the following lines:
+	For example, the file will have the following lines:
 
-	1 resizes, load factor 0.67, 1 collisions, 2 longest chain
-	2 resizes, load factor 0.67, 7 collisions, 2 longest chain
-	3 resizes, load factor 0.75, 55 collisions, 6 longest chain
-	4 resizes, load factor 0.68, 221 collisions, 14 longest chain
+	0 resizes, load factor 0.62, 0 collisions, 1 longest chain
+	1 resizes, load factor 0.66, 3 collisions, 2 longest chain
+	2 resizes, load factor 0.66, 7 collisions, 3 longest chain
+	3 resizes, load factor 0.66, 17 collisions, 4 longest chain
+	4 resizes, load factor 0.67, 24 collisions, 3 longest chain
 
 There are no "correct statistics" and your numbers will change depending on what hash function and initial table size you chose. These values will only indicate how good your chosen hash function is.
 
